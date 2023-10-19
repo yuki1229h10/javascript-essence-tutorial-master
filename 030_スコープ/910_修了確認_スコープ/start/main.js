@@ -50,6 +50,15 @@ function fn2() {
 }
 fn2();
 
+{
+    let num = 0;
+    function increment() {
+        num = num + 1;
+        console.log(num);
+    }
+}
+
+increment();
 
 /**
  * 問題３：
