@@ -6,33 +6,51 @@
  * わっていませんでした。
  * 以下のminus関数をどのように修正すればobj.prop1
  * の値を変更することができるでしょうか？
- * 
+ *
  */
 let obj = {
     prop1: 10
 }
 
 function minus(obj, val) {
-    let prop1 = obj.prop1;
-    prop1 = prop1 - val;
+    obj.prop1 = parseInt(obj.prop1) - val;
 }
 
 minus(obj, 1);
 console.log(obj.prop1);
+
+// const sumValues = objTest => Object.values(objTest).reduce((a, b) => a + b, 0);
+// console.log(sumValues);
+
+
+/**
+ * correct answer
+ */
+let objAnswer = {
+    prop1: 10
+}
+
+function minusAnswer(objAnswer, valAnswer) {
+    objAnswer.prop1 = objAnswer.prop1 - valAnswer;
+}
+
+minusAnswer(objAnswer, 1);
+console.log(objAnswer.prop1);
+
+
 /**
  * 問題２：
  * double関数を使ってobj.prop1の値を２倍にしたい
  * と思っていました。しかし、コンソールに表示された
  * のは元の値である'9'でした。
  * どうすれば、'18'が表示されるようになるでしょうか？
- * 
+ *
  * '18'が表示されるように、double関数内を修正してください。
  */
 
 
 function double(obj) {
-    let { prop1 } = obj;
-    prop1 = prop1 * 2;
+    obj.prop1 = obj.prop1 * 2;
 }
 
 double(obj);
@@ -57,16 +75,32 @@ function fn({ prop2 }) {
     return { prop2: prop };
 }
 obj = fn(obj);
-// console.log(obj.prop2.prop3);
+console.log(obj.prop2.prop3);
+
+// オブジェクトの値は、常に同じ領域を参照しているため
+
+
+/**
+ * correct answer
+ */
+// どのような操作がなされていても、3が最新である
+
 
 /**
  * 問題４：
  * through関数を経由して格納されるobj2は
  * objと等価でしょうか？
  */
-function through (obj) {
+function through(obj) {
     return obj;
 }
 
 const obj2 = through(obj);
 // console.log(obj === obj2);
+
+// 同等である
+
+/**
+ * correct answer
+ */
+// returnで同じものが帰ってくるため
