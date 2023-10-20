@@ -39,6 +39,19 @@ function fn(num = -1) {
 }
 fn(a);
 
+/**
+ * correct answer
+ */
+let aAnswer = 0;
+
+function fn(num = -1) {
+    if (num === undefined || num === null) {
+        num = -1;
+    }
+    console.log(num);
+}
+fn(aAnswer);
+
 
 /**
  * 問題３：
@@ -59,6 +72,18 @@ fn(a);
         //     console.log(array);
         // }
     }
+}
+
+greeting("Bob", "hi");
+greeting("Bob");
+
+
+/**
+ * correct answer
+ */
+function greeting(name, hi) {
+    hi = hi || 'hello';
+    console.log(`${hi}, ${name}`);
 }
 
 greeting("Bob", "hi");
