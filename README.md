@@ -2,10 +2,6 @@
 
 This repository is based on Udemy lecture.
 
-# important
+# ought to learn
 
 callback, bind, closure
-
-# action
-
-keep watching, start searching
