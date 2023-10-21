@@ -1,7 +1,10 @@
+window.name = 'DIO';
+
 const person = {
     name: 'Tom',
-    hello: function() {
+    hello: function (name) {
         console.log('Hello ' + this.name);
     }
 }
-person.hello();
+const ref = person.hello;
+ref();

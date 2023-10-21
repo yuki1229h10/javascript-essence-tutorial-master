@@ -5,3 +5,18 @@ const person = {
     }
 }
 person.hello();
+
+
+let myObject = {
+    value: 10,
+    show: function () {
+        console.log(this.value);
+    }
+}
+myObject.show();
+
+let show = function () {
+    let value = 10;
+    console.log(value);
+};
+show();
