@@ -1,6 +1,11 @@
 # javascript-essence-tutorial-master
+
 This repository is based on Udemy lecture.
 
-callback
-bind
-closure
+# important
+
+callback, bind, closure
+
+# action
+
+keep watching, start searching
