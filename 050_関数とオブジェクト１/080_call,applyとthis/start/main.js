@@ -16,3 +16,35 @@ Math.max(1, 2);
 
 const result = Math.max(...arry);
 console.log(result);
+
+
+
+function test() {
+    console.log('test');
+}
+
+test();
+test.call();
+test.apply();
+
+
+function test2() {
+    console.log(this);
+}
+
+test();
+test.call();
+test.apply();
+
+
+let user = { name: 'DIO' };
+
+function greeting(message) {
+    return `${message}, ${this.name}`;
+}
+
+const call = greeting.call(user, 'Hello');
+console.log(call);
+
+const apply = greeting.apply(user, ['Nice to meet you']);
+console.log(apply);
