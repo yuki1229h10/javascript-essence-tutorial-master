@@ -2,6 +2,10 @@
 
 This repository is based on Udemy lecture.
 
-# ought to learn
+# 指針
+
+まず終わらせる。
+
+# 復習する項目
 
 callback, bind, closure
