@@ -4,7 +4,7 @@ This repository is based on Udemy lecture.
 
 ### 目的
 
-- 体系的な JS の知識を身につけるため
+体系的な JS の知識を身につけるため
 
 ### 指針
 
