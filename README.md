@@ -4,7 +4,7 @@ This repository is based on Udemy lecture.
 
 ### 目的
 
-体系的な JS の知識を身につけるため
+React の学習に向けて JS の体系的な知識を習得する。
 
 ### 指針
 
